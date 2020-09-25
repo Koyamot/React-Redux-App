@@ -7,6 +7,8 @@ import thunk from "redux-thunk";
 
 import App from "./App";
 
+import "./index.css";
+
 const store = createStore(kanyeReducer, applyMiddleware(thunk));
 
 const rootElement = document.getElementById("root");

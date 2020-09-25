@@ -9,7 +9,7 @@ const App = (props) => {
 
   console.log('ko: ap.js: App: props: ', props)
   useEffect(() => {
-    // this code will run once
+    // this code will run onceho 
     // axios.get
     props.fetchData();
   }, []);
@@ -21,7 +21,7 @@ const App = (props) => {
   return (
     <div className="App">
       <div className="kanye-card">
-      <h1>Kanye West Quotes</h1>
+      <h1>Gain Wisdom</h1>
       {props.is_loading_data ? (
         <div>**fetching quote**</div>
       ) : props.error ? (
@@ -32,7 +32,7 @@ const App = (props) => {
         </>
       )}
       <img className="kanyeimg" src="https://media.foxbusiness.com/BrightCove/854081161001/202001/865/854081161001_6127869979001_6127874242001-vs.jpg"></img>
-      <button onClick={refreshPage}>New Quote</button>
+      <button onClick={refreshPage}>More Wisdown</button>
       </div> 
     </div>
   );
